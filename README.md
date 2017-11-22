@@ -1,6 +1,6 @@
 # ffmpeg-stabilizer
 This is a small tool to facilitate people that are 'losers' in making videos - i.e., have shaky hands. In this **tool-chain**
-you can stablize (using ffmpeg)
+you can stablize a set of videos (using ffmpeg).
 
 1. Cut specific sections within for a set of videos
 1. Stablize them.
@@ -8,7 +8,7 @@ you can stablize (using ffmpeg)
 
 # Usage
 > Construct a csv file that looks like
-~~~csv
+~~~CSV
 filename,ffmpeg-options # don't include this header..
 converted/MVI_9154.MOV,-ss 00:00:27 -t 00:00:31
 converted/MVI_9154.MOV,-ss 00:00:51 -t 00:00:53
@@ -30,8 +30,12 @@ Then, run the following command:
 ./stablize.sh list.csv
 ~~~
 
+## Notes
+On ubuntu you probably need to change `ffmpeg` to `libav`, and it should work then. This is however not tested yet.
+
 ## Disclaimer
 This tool has been 'hacked' together, but is nonetheless very useful. Don't complain about readability, it's Bash.. get over it ;)
+
 
 Example output to check if you're doing it a bit right.
 ~~~
