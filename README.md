@@ -1,10 +1,10 @@
 # ffmpeg-stabilizer
-This is a small tool to facilitate people that are 'losers' in making videos - i.e., have shaky hands. In this **tool-chain**
-you can stablize a set of videos (using ffmpeg).
+This is a small tool to facilitate people that a re 'losers' in making videos - i.e., have shaky hands. In this **tool-chain**
+you can stablize a set of videos (using ffmpeg). We use the beauty of make, that is able to check if your specific file has already been stabilized. It's a very simple makefile, yet powerful.
 
 1. Cut specific sections within for a set of videos
-1. Stablize them.
-1. Check if you made some impact with the before-and-after view (merged).
+1. Stablize them using a Makefile that also checks if it already has been stablized or not.
+1. Check if you made some impact with the **before-and-after** (merged).
 
 # Usage
 > Construct a csv file that looks like
