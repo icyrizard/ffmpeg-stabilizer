@@ -7,8 +7,6 @@ fi
 
 video=$1
 output_video=$2
-echo "output_video" $2
-#options=$2
 base=$(basename "$output_video")
 extension="${base##*.}"
 base_filename="${base%.*}"
